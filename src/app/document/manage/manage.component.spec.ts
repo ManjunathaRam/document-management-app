@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DocumentManagementComponent } from './document-management.component';
+import { ManageComponent } from './manage.component';
 
 describe('DocumentManagementComponent', () => {
-  let component: DocumentManagementComponent;
-  let fixture: ComponentFixture<DocumentManagementComponent>;
+  let component: ManageComponent;
+  let fixture: ComponentFixture<ManageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DocumentManagementComponent]
+      declarations: [ManageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DocumentManagementComponent);
+    fixture = TestBed.createComponent(ManageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
