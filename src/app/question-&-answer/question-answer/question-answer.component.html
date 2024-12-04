@@ -1,1 +1,14 @@
-<p>question-answer works!</p>
+<div>
+    <textarea [(ngModel)]="question" placeholder="Ask your question here"></textarea>
+    <button (click)="askQuestion()">Submit</button>
+  </div>
+  <div *ngIf="answer">
+    <h3>Answer</h3>
+    <p>{{ answer }}</p>
+    <h4>Relevant Documents</h4>
+    <ul>
+      <li *ngFor="let doc of relevantDocs">
+        {{ doc.excerpt }} (Source: {{ doc.source }})
+      </li>
+    </ul>
+  </div>
